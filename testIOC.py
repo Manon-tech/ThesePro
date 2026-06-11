@@ -140,12 +140,9 @@ def informationsIP(repertoire_retour, nom_fichier_retour, ip):
         fichier.write("\n")
         fichier.write("=" * 80 + "\n")
         fichier.write(f"Analyse de l'adresse IP : {ip}\n")
-        fichier.write(f"Date : {datetime.now()}\n")
         fichier.write("=" * 80 + "\n\n")
-        # Résolution DNS
         hostname = resolution_dns(ip)
         fichier.write(f"Nom de la machine : {hostname}\n\n")
-        # Scan Nmap
         sortie_nmap = scan_nmap(ip)
         services = extraire_services(sortie_nmap)
         if not services:
@@ -159,10 +156,8 @@ def informationsIP(repertoire_retour, nom_fichier_retour, ip):
             fichier.write(f"Port : {port}\n")
             fichier.write(f"Service : {service}\n")
             fichier.write(f"Version : {version}\n")
-            # Fin de support
             fin_support = recuperer_fin_support(service,version)
             fichier.write(f"Fin de support : {fin_support}\n")
-            # CVE
             cves = recuperer_cves(service,version)
             fichier.write("\nCVE associées :\n")
             if not cves:
@@ -181,5 +176,5 @@ subprocess.run(["mkdir", folderNameNmap])
 subnets = ["192.168.0.0/24", "192.168.2.0/24"]
 listFilesIP = cartographie(subnets, folderNameNmap)
 fileIP = extractionIP(listFilesIP, folderNameNmap, folderName)
-fileNameRepport = "RapportICO_" + datetime.date
+fileNameRepport = "RapportIPs_" + datetime.date
 informationsIP(folderName, fileNameRepport)
