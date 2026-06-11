@@ -1,0 +1,24 @@
+# Exemple SIMULÉ de sortie Nmap pour un sous-réseau 192.168.1.0/24
+# Ce fichier ne provient pas d'un scan réel.
+
+Starting Nmap 7.94 at 2026-06-09 10:00 UTC
+Nmap scan report for 192.168.1.1
+Host is up (0.0020s latency).
+PORT     STATE SERVICE
+22/tcp   open  ssh
+80/tcp   open  http
+443/tcp  open  https
+
+Nmap scan report for 192.168.1.10
+Host is up (0.0015s latency).
+PORT     STATE SERVICE
+135/tcp  open  msrpc
+139/tcp  open  netbios-ssn
+445/tcp  open  microsoft-ds
+
+Nmap scan report for 192.168.1.20
+Host is up (0.0009s latency).
+PORT     STATE SERVICE
+53/tcp   open  domain
+
+Nmap done: 256 IP addresses (3 hosts up) scanned.

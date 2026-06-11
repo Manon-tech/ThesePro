@@ -1,0 +1,103 @@
+# Exemple SIMULÉ de sortie Nmap pour le sous-réseau 192.168.10.0/24
+# Données fictives à des fins de test.
+
+Starting Nmap 7.94 at 2026-06-09 10:15 UTC
+
+Nmap scan report for 192.168.10.1
+Host is up (0.0012s latency).
+PORT     STATE SERVICE
+22/tcp   open  ssh
+80/tcp   open  http
+443/tcp  open  https
+
+Nmap scan report for 192.168.10.3
+Host is up (0.0021s latency).
+PORT     STATE SERVICE
+53/tcp   open  domain
+
+Nmap scan report for 192.168.10.5
+Host is up (0.0018s latency).
+PORT     STATE SERVICE
+80/tcp   open  http
+
+Note: Host seems down. If it is really up, but blocking our ping probes, try -Pn
+Nmap scan report for 192.168.10.7
+Host is down.
+
+Nmap scan report for 192.168.10.8
+Host is up (0.0011s latency).
+PORT      STATE SERVICE
+135/tcp   open  msrpc
+139/tcp   open  netbios-ssn
+445/tcp   open  microsoft-ds
+
+Nmap scan report for 192.168.10.10
+Host is up (0.0017s latency).
+PORT     STATE SERVICE
+3389/tcp open  ms-wbt-server
+
+Nmap scan report for 192.168.10.12
+Host is down.
+
+Nmap scan report for 192.168.10.15
+Host is up (0.0024s latency).
+PORT      STATE SERVICE
+21/tcp    open  ftp
+22/tcp    open  ssh
+
+Nmap scan report for 192.168.10.18
+Host is down.
+
+Nmap scan report for 192.168.10.20
+Host is up (0.0014s latency).
+PORT     STATE SERVICE
+80/tcp   open  http
+443/tcp  open  https
+
+Nmap scan report for 192.168.10.22
+Host is up (0.0030s latency).
+PORT      STATE SERVICE
+25/tcp    open  smtp
+110/tcp   open  pop3
+143/tcp   open  imap
+
+Nmap scan report for 192.168.10.25
+Host is down.
+
+Nmap scan report for 192.168.10.30
+Host is up (0.0010s latency).
+PORT     STATE SERVICE
+3306/tcp open  mysql
+
+Nmap scan report for 192.168.10.35
+Host is up (0.0016s latency).
+PORT      STATE SERVICE
+5432/tcp  open  postgresql
+
+Nmap scan report for 192.168.10.40
+Host is down.
+
+Nmap scan report for 192.168.10.45
+Host is up (0.0013s latency).
+PORT      STATE SERVICE
+8080/tcp  open  http-proxy
+
+Nmap scan report for 192.168.10.50
+Host is up (0.0022s latency).
+PORT      STATE SERVICE
+161/udp   open  snmp
+
+Nmap scan report for 192.168.10.60
+Host is down.
+
+Nmap scan report for 192.168.10.75
+Host is up (0.0019s latency).
+PORT      STATE SERVICE
+5900/tcp  open  vnc
+
+Nmap scan report for 192.168.10.90
+Host is up (0.0015s latency).
+PORT      STATE SERVICE
+9200/tcp  open  elasticsearch
+
+Nmap done: 256 IP addresses (13 hosts up) scanned.
