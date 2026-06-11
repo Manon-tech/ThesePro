@@ -181,3 +181,5 @@ subprocess.run(["mkdir", folderNameNmap])
 subnets = ["192.168.0.0/24", "192.168.2.0/24"]
 listFilesIP = cartographie(subnets, folderNameNmap)
 fileIP = extractionIP(listFilesIP, folderNameNmap, folderName)
+fileNameRepport = "RapportICO_" + datetime.date
+informationsIP(folderName, fileNameRepport)
